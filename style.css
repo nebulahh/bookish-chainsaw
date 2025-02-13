@@ -24,10 +24,11 @@ html {
     font-variation-settings: normal
 }
 
+/* General styles */
 body {
     margin: 0;
     line-height: inherit;
-    background: linear-gradient(to bottom right, yellow, gold, black);
+    background: linear-gradient(to bottom right, #e0f7fa, #0288d1); /* Light blue to dark blue gradient */
 }
 
 hr {
@@ -1336,7 +1337,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 nav.ckkqv.csg0k a {
-    color: gold; 
     text-decoration: none; 
     padding: 10px 15px; 
     font-weight: bold; 
@@ -1504,20 +1504,21 @@ nav.ckkqv.csg0k a:hover {
 
 /* Footer section */
 .footer-section {
-    background: linear-gradient(to right, #fffacd, #ffd700); /* Softer yellow to gold gradient */
-    color: #0f0202; /* Slightly off-white color for text */
+    background-color: #baf8f8; /* New section background color */
+    color: #151827; /* New text color */
     padding: 20px; /* Add some padding for spacing */
 }
 
-/* Ensure all text elements within the footer are off-white */
+/* Ensure all text elements within the footer are the new text color */
 .footer-section h2,
-.footer-section p {
-    color: #000; /* Slightly off-white color for text */
+.footer-section p,
+.footer-section a {
+    color: #151827; /* New text color */
 }
 
 /* Add some hover effects for links */
 .footer-section a:hover {
-    color: #ffd700; /* Change link color on hover */
+    color: #0288d1; /* Dark blue color on hover */
     text-decoration: underline; /* Underline links on hover */
 }
 
@@ -1722,21 +1723,20 @@ nav.ckkqv.csg0k a:hover {
 
 /* Memes section */
 .ck6ml {
-    background-color: #fffacd; /* Light yellow background */
-    border: 1px solid #ffd700; /* Gold border */
-    padding: 20px; /* Add some padding for spacing */
-    border-radius: 0; /* Remove border radius */
+    background-color: #94f6f9; /* New section background color */
+    padding: 20px;
+    border-radius: 0;
 }
 
 /* Memes section text */
 .ck6ml h2,
 .ck6ml p {
-    color: #0f0202; /* Dark text color for contrast */
+    color: #151827; /* New text color */
 }
 
 /* Memes section images */
 .ck6ml img {
-    border: 1px solid #ffd700; /* Gold border for images */
+    border: 1px solid #0288d1; /* Dark blue border for images */
     border-radius: 5px; /* Rounded corners for images */
 }
 
@@ -1762,7 +1762,7 @@ nav.ckkqv.csg0k a:hover {
 .czz7z {
     --tw-gradient-from: #71717a var(--tw-gradient-from-position);
     --tw-gradient-to: rgb(113 113 122 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+    --tw-gradient-stops: var (--tw-gradient-from), var (--tw-gradient-to)
 }
 
 .c6toe {
@@ -2349,7 +2349,6 @@ nav.ckkqv.csg0k a:hover {
 .c3wqj::before {
     content: var(--tw-content);
     --tw-bg-opacity: 1;
-    background-color: rgb(24 24 27/var(--tw-bg-opacity))
 }
 
 .ca5a1::before {
@@ -2401,7 +2400,7 @@ nav.ckkqv.csg0k a:hover {
 .cib8r::before {
     content: var(--tw-content);
     --tw-blur: blur(64px);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--tw-blur) var(--tw-brightness) var (--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 
 .cmykr::before {
@@ -2983,40 +2982,24 @@ nav.ckkqv.csg0k a:hover {
 
 /* Tabs items section */
 .caa44.cvlkh {
-    background-color: #fffacd;
-    border: 1px solid #ffd700; 
+    background-color: #baf8f8; /* New section background color */
     padding: 20px;
     border-radius: 0;
 }
 
 /* Tabs items text */
 .caa44.cvlkh h2,
-.caa44.cvlkh p {
-    color: #0f0202;
+.caa44.cvlkh p,
+.ctv8m.c1aor,
+.cp2hz.c81j7.cdl4l,
+.cofcj.c1aor {
+    color: #151827; /* New text color */
 }
 
 /* Tabs items buttons */
 .caa44.cvlkh button {
-    background-color: #ffd700; 
-    color: #0f0202;
-    border: none; 
-    padding: 10px 20px; 
-    border-radius: 5px;
-    cursor: pointer; 
-}
-
-/* Tabs items buttons hover effect */
-.caa44.cvlkh button:hover {
-    background-color: #fffacd;
-    color: #0f0202;
-    border: 1px solid #ffd700; 
-    padding: 10px;
-}
-
-/* Tab buttons */
-.tab-button {
-    background-color: #ffd700; /* Gold background for buttons */
-    color: #0f0202; /* Dark text color for buttons */
+    background-color: #baf8; /* Dark blue background for buttons */
+    color: white; /* White text color for buttons */
     border: none; /* Remove default border */
     padding: 10px 20px; /* Add some padding for buttons */
     border-radius: 5px; /* Rounded corners for buttons */
@@ -3024,9 +3007,34 @@ nav.ckkqv.csg0k a:hover {
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
 }
 
+/* Tabs items buttons hover effect */
+.caa44.cvlkh button:hover {
+    background-color: #e0f7fa; /* Light blue background on hover */
+    color: #0288d1; /* Dark blue text color on hover */
+    border: 1px solid #0288d1; /* Dark blue border on hover */
+}
+
+/* Tab buttons */
+.tab-button {
+    background: #baf8f8; /* Match body background */
+    color: #151827; /* New text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 /* Tab buttons hover effect */
 .tab-button:hover {
-    background-color: #fffacd; /* Light yellow background on hover */
-    color: #0f0202; /* Dark text color on hover */
-    /* Ensure no size-changing properties are applied on hover */
+    background: #f0f9fa; /* Very light blue background on hover */
+    color: #151827; /* New text color */
+    border: 1px solid #0288d1;
+}
+
+/* Override any other text colors */
+.c1aor,
+.cdl4l,
+.cjyx7 {
+    color: #151827 !important;
 }
